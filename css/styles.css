@@ -29,9 +29,26 @@ img {
 
 /*#region Container */
 .container {
-  width: 1158px;
+  min-width: 320px;
+  max-width: 396px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
 }
 
 .visually-hidden {
