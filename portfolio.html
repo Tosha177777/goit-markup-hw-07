@@ -21,10 +21,11 @@
     <!-- Header -->
     <header class="header-border-color">
       <div class="container main-nav">
-        <nav class="main-nav">
+        <nav class="main-nav full-nav">
           <a href="./index.html" class="link header-web-style"
             >WEB<span class="header-studio-style">Studio</span>
           </a>
+
           <ul class="list header-list">
             <li class="item">
               <a href="./index.html" class="navi link">Studio</a>
@@ -32,8 +33,29 @@
             <li class="item">
               <a href="./portfolio.html" class="navi current link">Portfolio</a>
             </li>
-            <li class="item"><a href="" class="navi link">Contacts</a></li>
+            <li class="item">
+              <a href="" class="navi link">Contacts</a>
+            </li>
           </ul>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="32"
+              height="22"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="./images/icon.svg#icon-menu-ham"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </nav>
         <!-- Addresses -->
         <address class="addresses link">
@@ -331,11 +353,16 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-form-box">
           <p class="footer-soc-head">Subscribe</p>
           <form class="footer-form">
             <label class="info-label">
-              <input type="email" class="footer-input" placeholder=" " />
+              <input
+                type="email"
+                name="email"
+                class="footer-input"
+                placeholder=" "
+              />
               <span class="email-span">E-mail</span>
             </label>
             <button type="submit" class="footer-sub-btn buttons-cursor">
@@ -345,5 +372,78 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg fill="currentColor" width="8" height="8">
+          <use href="./images/icon.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li>
+          <a href="./index.html" class="link">Studio</a>
+        </li>
+        <li>
+          <a href="" class="link number">Portfolio</a>
+        </li>
+        <li>
+          <a href="" class="link">Contacts</a>
+        </li>
+      </ul>
+
+      <!-- <div class="mobile-contact-box"> -->
+      <ul class="mobile-contacts list">
+        <li>
+          <a class="number mobile-contacts-item link" href="tel:"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="mobile-contacts-item link" href="mailto:"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-social-links-flex list">
+        <li class="footer-item">
+          <a href="" class="footer-links"
+            ><svg class="footer-social" width="24" height="24">
+              <use href="./images/icon.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="" class="footer-links"
+            ><svg class="footer-social" width="24" height="24">
+              <use href="./images/icon.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="" class="footer-links"
+            ><svg class="footer-social" width="24" height="24">
+              <use href="./images/icon.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="" class="footer-links">
+            <svg class="footer-social" width="24" height="24">
+              <use href="./images/icon.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <!-- </div> -->
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
