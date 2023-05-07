@@ -31,7 +31,7 @@ img {
 .container {
   min-width: 320px;
   max-width: 428px;
-  /* width: 396px; */
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
   outline: 1px solid salmon;
@@ -266,28 +266,96 @@ img {
   color: var(--pressed-state);
 }
 
+@media screen and (max-width: 1157px) {
+  .addresses.link {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+  }
+}
+
 /*#endregion header */
 
 /*#region 1st section */
+@media screen and (min-width: 320px) {
+  .hero-section {
+    max-width: 428px;
+    width: 100%;
 
-.hero-section {
-  width: 100%;
+    background-color: var(--headline-color);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-background/hero_mob@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  background-color: var(--headline-color);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url("../images/hero-dark-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    text-align: center;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-  text-align: center;
-  padding-top: 112px;
-  padding-bottom: 112px;
-  margin-left: auto;
-  margin-right: auto;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-background/hero_mob@2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 429px) and (max-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-background/hero_tab@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-background/hero_tab@2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero-section {
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-background/hero_desk@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-background/hero_desk@2x.jpg");
+    }
+  }
 }
 
 .header-hero {
@@ -615,6 +683,12 @@ img {
 
 /*#endregion section 4*/
 
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .common-container {
+    width: 582px;
+  }
+}
+
 /*#region section 5*/
 
 .fifth-sec {
@@ -662,11 +736,20 @@ img {
   }
 }
 
+.customers-item {
+  width: calc((100% - 16px) / 2);
+}
+
+@media screen and (min-width: 768px) {
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+}
+
 .customers-link {
   display: flex;
   border: 1px solid var(--light-slate);
   border-radius: 4px;
-  width: 168px;
   height: 88px;
   align-items: center;
   justify-content: center;
@@ -1220,6 +1303,9 @@ img {
   top: 0;
   left: 0;
 
+  margin-top: auto;
+  margin-left: auto;
+
   width: 100%;
   height: 100%;
 
@@ -1227,6 +1313,8 @@ img {
 
   visibility: visible;
   opacity: 1;
+  overflow-y: scroll;
+
   transition: opacity 250ms var(--transition-timing-function),
     visibility 250ms var(--transition-timing-function);
 }
@@ -1273,12 +1361,10 @@ img {
 
 .modal-close-btn {
   position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-100%, 100%);
+  top: 24px;
+  right: 24px;
 
-  width: 24px;
-  height: 24px;
+  padding: 8px;
 
   display: flex;
   border-radius: 50%;
