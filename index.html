@@ -151,13 +151,41 @@
           <h2 class="headlines-scnd-rang thrd-sec">What are we doing</h2>
           <ul class="list index-imgs">
             <li class="index-imgs-width">
-              <img src="./images/img1.jpg" alt="computer" width="360" />
+              <picture> </picture>
+              <img
+                srcset="
+                  ./images/doing/img1.jpg     360w,
+                  ./images/doing/img1-@2x.jpg 720w
+                "
+                sizes="360px"
+                src="./images/doing/img1.jpg"
+                alt="computer"
+                width="360"
+              />
             </li>
             <li class="index-imgs-width">
-              <img src="./images/img2.jpg" alt="layers of screen" width="360" />
+              <img
+                srcset="
+                  ./images/doing/img2.jpg     360w,
+                  ./images/doing/img2-@2x.jpg 720w
+                "
+                sizes="360px"
+                src="./images/doing/img2.jpg"
+                alt="layers of screen"
+                width="360"
+              />
             </li>
             <li class="index-imgs-width">
-              <img src="./images/img3.jpg" alt="phone" width="360" />
+              <img
+                srcset="
+                  ./images/doing/img3.jpg     360w,
+                  ./images/doing/img3-@2x.jpg 720w
+                "
+                sizes="360px"
+                src="./images/doing/img3.jpg"
+                alt="phone"
+                width="360"
+              />
             </li>
           </ul>
         </div>
@@ -169,9 +197,14 @@
           <ul class="list index-imgs">
             <li class="our-team">
               <img
-                src="./images/img-mark.jpg"
+                srcset="
+                  ./images/team-photos/img-mark@1x.jpg 264w,
+                  ./images/team-photos/img-mark@2x.jpg 528w
+                "
+                sizes="264px"
+                src="./images/team-photos/img-mark@1x.jpg"
                 alt="Mark's photo"
-                width="100%"
+                width="264"
               />
               <div class="team-sec-div">
                 <h3 class="thrd-rang-headlines team-names">Mark Guerrero</h3>
@@ -209,7 +242,16 @@
               </div>
             </li>
             <li class="our-team">
-              <img src="./images/img-tom.jpg" alt="Tom's photo" width="100%" />
+              <img
+                srcset="
+                  ./images/team-photos/img-tom@1x.jpg 264w,
+                  ./images/team-photos/img-tom@2x.jpg 528w
+                "
+                sizes="264px"
+                src="./images/team-photos/img_tom@1x.jpg"
+                alt="Tom's photo"
+                width="264"
+              />
               <div class="team-sec-div">
                 <h3 class="thrd-rang-headlines team-names">Tom Ford</h3>
                 <p class="scnd-sec-par teams-par">Frontend Developer</p>
@@ -247,9 +289,14 @@
             </li>
             <li class="our-team">
               <img
-                src="./images/img-camila.jpg"
+                srcset="
+                  ./images/team-photos/img-camila@1x.jpg 264w,
+                  ./images/team-photos/img-camila@2x.jpg 528w
+                "
+                sizes="264px"
+                src="./images/team-photos/img-camila@1x.jpg"
                 alt="Camila's photo"
-                width="100%"
+                width="264"
               />
               <div class="team-sec-div">
                 <h3 class="thrd-rang-headlines team-names">Camila Garcia</h3>
@@ -288,9 +335,14 @@
             </li>
             <li class="our-team">
               <img
+                srcset="
+                  ./images/team-photos/img-daniel@2x.jpg 528w,
+                  ./images/team-photos/img-daniel@1x.jpg 264w
+                "
+                sizes="264px"
                 src="./images/img-daniel.jpg"
                 alt="Daniel's photo"
-                width="100%"
+                width="264px"
               />
               <div class="team-sec-div">
                 <h3 class="thrd-rang-headlines team-names">Daniel Wilson</h3>
@@ -546,25 +598,24 @@
 
       <ul class="mobile-menu list">
         <li>
-          <a href="" class="link number">Studio</a>
+          <a href="./index.html" class="link number mob-lnk">Studio</a>
         </li>
         <li>
-          <a href="./portfolio.html" class="link">Portfolio</a>
+          <a href="./portfolio.html" class="link mob-lnk">Portfolio</a>
         </li>
         <li>
-          <a href="" class="link">Contacts</a>
+          <a href="" class="link mob-lnk">Contacts</a>
         </li>
       </ul>
 
-      <!-- <div class="mobile-contact-box"> -->
       <ul class="mobile-contacts list">
         <li>
-          <a class="number mobile-contacts-item link" href="tel:"
+          <a class="number mobile-contacts-item link mob-lnk" href="tel:"
             >+11 (000) 111-11-11</a
           >
         </li>
         <li>
-          <a class="mobile-contacts-item link" href="mailto:"
+          <a class="mobile-contacts-item link mob-lnk" href="mailto:"
             >info@devstudio.com</a
           >
         </li>
@@ -600,7 +651,6 @@
           </a>
         </li>
       </ul>
-      <!-- </div> -->
     </div>
     <script src="./js/modal.js"></script>
     <script
