@@ -1597,8 +1597,8 @@ img {
 
 /*#region Mobile */
 .menu-toggle {
-  min-height: 24px;
-  min-width: 24px;
+  width: 32px;
+  height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1706,6 +1706,10 @@ img {
   line-height: 1.11;
 
   letter-spacing: 0.02em;
+  color: var(--pressed-state);
+}
+
+.number.mobile-contacts-item {
   color: var(--order-button-color);
 }
 
