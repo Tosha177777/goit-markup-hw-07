@@ -1597,8 +1597,9 @@ img {
 
 /*#region Mobile */
 .menu-toggle {
-  width: 32px;
-  height: 22px;
+  min-width: 24px;
+  min-height: 24px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1649,6 +1650,9 @@ img {
   position: absolute;
   top: 16px;
   right: 16px;
+
+  padding: 8px;
+
   color: var(--headline-color);
   background-color: var(--accent-color);
   border: 1px solid var(--light-slate);
