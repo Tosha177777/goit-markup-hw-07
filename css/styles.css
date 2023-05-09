@@ -646,6 +646,10 @@ img {
   margin-bottom: 8px;
 }
 
+.scnd-sec-par.teams-par {
+  font-weight: var(--font-weight-regular);
+}
+
 .team-list {
   display: flex;
   list-style: none;
